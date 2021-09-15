@@ -9,5 +9,6 @@ install2.r --error --skipinstalled \
   cyclocomp    \
   rex          \
   lazyeval     \
-  lintr
+  lintr        \
+  cowplot
 

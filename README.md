@@ -6,6 +6,19 @@ author: FCACollin
 This repository contains the docker image definition supporting the real
 world evidence study of
 _Neuromyelitis Optica Spectrum Disorder_ (NMOSD).
+This image relies on the underlying docker image rocker/verse:4.1.0.
+
+
+## TODOs
+
+- add the `.pandoc/templates/eisvogel` file to user home dir.
+- add default git config
+[user]
+	email = fca.collin@gmail.com
+	name = Your Name
+- dont remove install script:
+  https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008316
+you should keep the script in the container for a future user to inspect; the script size is negligible compared to the image size
 
 ## Pre-requisite
 
