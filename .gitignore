@@ -1,3 +1,4 @@
 README.html
 *.swp
-
+.Rproj.user
+ayup_dock.Rproj
