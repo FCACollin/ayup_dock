@@ -3,11 +3,9 @@ title: README - Docker image
 author: FCACollin
 ---
 
-This repository contains the docker image definition supporting the real
-world evidence study of
-_Neuromyelitis Optica Spectrum Disorder_ (NMOSD).
+This repository contains the docker image definition for reproducibility
+of statistical analysis.
 This image relies on the underlying docker image rocker/verse:4.1.0.
-
 
 ## TODOs
 
@@ -31,7 +29,7 @@ you should keep the script in the container for a future user to inspect; the sc
     - run the command line:
 
 ```
-docker build -t nmosd .
+docker build -t ayup_dock .
 ```
 
 2. Run the container
@@ -40,19 +38,14 @@ docker build -t nmosd .
 
 ```
 docker run \
-  --rm     \
-  -p 8787:8787 \
-  -e USER=fcollin \
-  -e PASSWORD=fcollin \
-  -v /home/fcollin/nmosd/:/home/fcollin/r-docker \
-  nmosd
-```
-
-3. Remove the container (optional)
-    - run the command line:
-
-```
-docker rmi rmi nmosd:latest
+  --name rrms-covid \
+  --restart always \
+  --detach \
+  --publish 8787:8787 \
+  --env USER=$USER \
+  --env PASSWORD=$USER \
+  --volume $HOME/covid:$HOME/r-docker \
+  ayup_dock
 ```
 
 ## Description
