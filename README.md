@@ -44,7 +44,7 @@ docker run \
   --publish 8787:8787 \
   --env USER=$USER \
   --env PASSWORD=$USER \
-  --volume /home/fcollin/Documents/praca/latarnia/P07_RRMS/p07_n04_covid:$HOME/r-docker \
+  --volume /home/fcollin/Documents/praca/latarnia/P07_RRMS:$HOME/r-docker \
   ayup_dock:v1.0.0
 ```
 
