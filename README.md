@@ -29,7 +29,7 @@ you should keep the script in the container for a future user to inspect; the sc
     - run the command line:
 
 ```
-docker build -t ayup_dock .
+docker build -t ayup_dock:v1.0.1 .
 ```
 
 2. Run the container
@@ -44,8 +44,8 @@ docker run \
   --publish 8787:8787 \
   --env USER=$USER \
   --env PASSWORD=$USER \
-  --volume /home/fcollin/Documents/praca/latarnia/P07_RRMS/p07_n04_covid:$HOME/r-docker \
-  ayup_dock:v1.0.0
+  --volume /home/fcollin/Documents/praca/latarnia/P07_RRMS:$HOME/r-docker \
+  ayup_dock:v1.0.1
 ```
 
 3. Update the image

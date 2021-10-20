@@ -13,4 +13,5 @@ install2.r --error --skipinstalled \
   cowplot      \
   FactoMineR   \
   emmeans      \
-  hexbin
+  hexbin       \
+  Rdpack
