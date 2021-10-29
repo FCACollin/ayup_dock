@@ -56,7 +56,14 @@ docker rm rrms-covid
 ```
 
 Then redo step 1 and 2.
+
 ## Description
 
 This image definition amends the docker image `rocker/verse:4.1.0` with
 R package dependencies listed in the file `scripts/install_nmosd.sh`.
+
+## Change log
+
+- v1.0.2: added ggalluvial for alluvial plots.
+- v1.0.1: added Rdpack for bibtex citations in r packages
+- v1.0.0 - minimal for my business
