@@ -14,4 +14,5 @@ install2.r --error --skipinstalled \
   FactoMineR   \
   emmeans      \
   hexbin       \
-  Rdpack
+  Rdpack       \
+  ggalluvial

@@ -29,7 +29,7 @@ you should keep the script in the container for a future user to inspect; the sc
     - run the command line:
 
 ```
-docker build -t ayup_dock:v1.0.1 .
+docker build -t ayup_dock:v1.0.2 .
 ```
 
 2. Run the container
@@ -45,7 +45,7 @@ docker run \
   --env USER=$USER \
   --env PASSWORD=$USER \
   --volume /home/fcollin/Documents/praca/latarnia/P07_RRMS:$HOME/r-docker \
-  ayup_dock:v1.0.1
+  ayup_dock:v1.0.2
 ```
 
 3. Update the image
@@ -56,7 +56,14 @@ docker rm rrms-covid
 ```
 
 Then redo step 1 and 2.
+
 ## Description
 
 This image definition amends the docker image `rocker/verse:4.1.0` with
 R package dependencies listed in the file `scripts/install_nmosd.sh`.
+
+## Change log
+
+- v1.0.2: added ggalluvial for alluvial plots.
+- v1.0.1: added Rdpack for bibtex citations in r packages
+- v1.0.0 - minimal for my business
