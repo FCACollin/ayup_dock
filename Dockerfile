@@ -67,6 +67,8 @@ RUN echo "Texlive dependencies for template eisvogel (pdf)" \
     bookmark \
     booktabs \
     mdwtools \
+    multirow \
+    ec \
     unicode-math \
     polyglossia \
     pgf \

@@ -15,4 +15,5 @@ install2.r --error --skipinstalled \
   emmeans      \
   hexbin       \
   Rdpack       \
-  ggalluvial
+  ggalluvial   \
+  flextable
