@@ -32,7 +32,7 @@ you should keep the script in the container for a future user to inspect; the sc
     - run the command line:
 
 ```
-docker build -t ayup_dock:v1.0.3 .
+docker build -t ayup_dock:v1.1.0 .
 ```
 
 2. Run the container
@@ -48,7 +48,7 @@ docker run \
   --env USER=$USER \
   --env PASSWORD=$USER \
   --volume /home/fcollin/Documents/praca/latarnia/P07_RRMS:$HOME/r-docker \
-  ayup_dock:v1.0.3
+  ayup_dock:v1.1.0
 ```
 
 3. Update the image
@@ -72,6 +72,11 @@ R package dependencies listed in the file `scripts/install_nmosd.sh`.
 
 ## Change log
 
+
+- v1.1.0:
+    + addition of VennDiagram (r package).
+    + addition of multcomp and multcompView (r package) for compact letter
+      display.
 - v1.0.3: addition of flextable (r package) and multirow texlice dependency
   along with ec.
 - v1.0.2: added ggalluvial for alluvial plots.
