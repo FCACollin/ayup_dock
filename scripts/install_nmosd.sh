@@ -16,4 +16,8 @@ install2.r --error --skipinstalled \
   hexbin       \
   Rdpack       \
   ggalluvial   \
-  flextable
+  flextable    \
+  VennDiagram  \
+  multcomp     \
+  multcompView
+
